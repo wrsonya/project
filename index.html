@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header container">
         <img src="images/logo.png" alt="logotip" width="150" height="100"> 
-        <nav>
-            <ul>
-                <li> <a href="#">Новости</a></li>
-                <li> <a href="#">Обновления</a></li>
-                <li> <a href="#">Популярные ресурсы</a></li>
+        <nav class="header__nav"> 
+            <ul class="header__list">
+                <li class="header__item"> <a href="#">Новости</a></li>
+                <li class="header__item"> <a href="#">Обновления</a></li>
+                <li class="header__item"> <a href="#">Популярные ресурсы</a></li>
             </ul>
         </nav>
-        <button> Вход/регистрация </button>
+        <button class="header__login"> Вход/регистрация </button>
         <div>
             <input type="text">
             <button>Поиск</button>
@@ -25,8 +27,8 @@
        <a href="">Форум</a> 
         <a href="https://www.efset.org/ru/">Пройти тест на определение уровня языка</a>
     </aside>
-    <main>
-        <section>
+    <main class="container">
+        <section >
             <img src="images/english.jpg" alt="english" width="300"> 
         </section>
         <section>
@@ -39,6 +41,39 @@
                 </li>
             </ul>
         </section>
+
+        <section class="section card"  id="card">
+            <h2 class="section__title">Умная сортировка по тегам</h2>
+            <p class="section__description"> 
+            </p>
+            <div class="card__list">
+                <a class="card__item" href="https://prostoenglishblog.ru/beginner">
+                    <span class="card__icon">
+                        <img src="images/2655a1b9-1e6e-4fc3-982b-847830fbeda4.png" alt="Иконка для beginner" width="120"
+                             height="120">
+                    </span>
+                    <h3 class="card__title"> </h3>
+                    <p class="card__description"> </p>
+                </a>
+                <a class="card__item" href="https://prostoenglishblog.ru/intermediate/vocabulary">
+                    <span class="card__icon">
+                        <img src="images/216531bb-1476-48c6-8ac1-a1ff95294efd.png" alt="Иконка intermediate" width="120"
+                        height="120">
+                    </span>
+                    <h3 class="card__title"> </h3>
+                    <p class="card__description"> </p>
+                </a>
+                <a class="card__item" href="https://onlinetestpad.com/ru/tests/advanced">
+                    <span class="card__icon">
+                        <img src="images/ed822e0c-1cb9-4396-ab6c-c7a0b97ed574.png" alt="Иконка для advanced" width="120"
+                        height="120">
+                    </span>
+                    <h3 class="card__title"> </h3>
+                    <p class="card__description"> </p>
+                </a>
+            </div>
+        </section>
+
         <section>
             <div>
                 <a href="https://skyeng.ru/exercises/">Упражнения</a>
